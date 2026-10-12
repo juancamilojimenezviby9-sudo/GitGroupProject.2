@@ -1,0 +1,86 @@
+* {
+    box-sizing:border-box;
+}
+html {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(90deg, black, blue);
+}
+.header {
+    display: flex;
+    padding:32px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-family:'Geist Pixel',sans-serif;
+    margin: 5px 15px 5px auto;
+}
+.menu-item {
+    color: white;
+    border: 2px solid black;
+    padding:8px;
+    margin:8px;
+    border-radius:16px;
+    font-size:1rem;
+    cursor:pointer;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color:white;
+    padding:8px;
+    display: flex;
+}
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 6rem;
+    font-family:'Oswald', serif;
+    -webkit-text-stroke: 3px rgb(86, 86, 248);
+}
+h1 {
+    color:white;
+    text-shadow: 20px 20px 60px black;
+}
+.page-info {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+
+}
+.info-item {
+    padding: 16px;
+    font-size: 2rem;
+    border: 2px solid white;
+    border-radius: 16px;
+    margin: 24px;
+}
+.page-info summary:hover {
+    color: coral;
+}
+.description {
+    padding: 8px;
+    font-size: 1rem;
+}
+details::details-content {
+    opacity: 0;
+    height: 0;
+    overflow: clip;
+    transition:
+        height 0.4s ease,
+        opacity 0.4s ease,
+        content-visibility 0.4s allow-discrete;
+}
+
+details[open]::details-content {
+    opacity: 1;
+    height: auto;
+}
