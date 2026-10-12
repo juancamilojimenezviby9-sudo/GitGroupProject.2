@@ -5,7 +5,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(90deg, blue, navy);
+    background: linear-gradient(90deg, blue, rgb(80, 249, 1));
 }
 
 .header{
