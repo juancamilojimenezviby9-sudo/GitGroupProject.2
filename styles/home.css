@@ -1,1 +1,122 @@
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, blue, navy);
+}
+
+.header{
+    display: flex;
+    
+
+}
+
+.header-title{
+    margin: 5px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 5px 15px 5px auto;
+    gap: 20px;
+    color: white;
+}
+
+.menu-item{
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: background-color 0.7s ease;
+    
+}
+
+.menu-item:hover{
+background-color: white;
+color: navy;
+}
+
+.main{
+    display: grid;
+    grid-template: repeat(2, 200px) /  1fr 4fr;
+    gap: 10px;
+    margin: 10px;
+    margin-top: 200px;
+   
+    
+}
+
+.github{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+
+.main-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 5.5rem;
+    color: white;
+    
+}
+
+.git{
+    background-image: url(https://www.freeiconspng.com/uploads/github-logo-icon-3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+
+.button{
+    margin-left: calc(50% - 10%);
+    margin-top: 10%;
+    font-size: 2rem;
+    width: 20%;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid gold;
+    transition: background-color 0.7s ease;
+}
+
+.button:hover{
+    background-color: gold;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+
+    .header-title{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 5px auto;
+    gap: 20px;
+    color: white;
+}
+
+.menu-item{
+    display: flex;
+    gap: 4px;
+    padding: 8px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: background-color 0.7s ease;
+    
+}
+} 
