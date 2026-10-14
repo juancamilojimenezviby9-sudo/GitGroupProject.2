@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background: linear-gradient(90deg,rgb(17, 17, 175), rgb(1, 1, 32));
+}
+
+.title{
+    color: rgb(189, 178, 178);
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0 0 10px blue, 0 0 25px blue;
+}
+.GitGoing{
+text-align: left;
+margin-left: 10%;
+font-size: 24px;
+}
+.branch-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
