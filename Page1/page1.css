@@ -1,16 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background: linear-gradient(90deg,blue, navy);
-}
-
-.header{
-    display: flex;
-}
-
 .page-name {
     padding: 20px;
     text-align: center;
@@ -18,40 +5,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-.header-title{
-    margin: 5px;
-    font-size: 2.5rem;
-    color: white;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-    margin: 5px 15px 5px auto;
-    gap: 20px;
-    
-    
-}
-
-.menu-item{
-    display: flex;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    border: 2px solid white;
-    transition: background-color 0.7s ease;
-    
-}
-
-.menu-item:hover{
-background-color: rgb(251, 251, 251);
-color: navy;
-}
-
 
 .content {
     padding: 20px;
