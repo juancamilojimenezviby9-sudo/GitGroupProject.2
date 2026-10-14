@@ -8,26 +8,7 @@ html {
 body {
     background: linear-gradient(90deg, black, blue);
 }
-.header {
-    display: flex;
-    padding:32px;
-}
 
-.menu {
-    display: flex;
-    align-items: center;
-    font-family:'Geist Pixel',sans-serif;
-    margin: 5px 15px 5px auto;
-}
-.menu-item {
-    color: white;
-    border: 2px solid black;
-    padding:8px;
-    margin:8px;
-    border-radius:16px;
-    font-size:1rem;
-    cursor:pointer;
-}
 .main {
     display: flex;
     flex-direction: column;
