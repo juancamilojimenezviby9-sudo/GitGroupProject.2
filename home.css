@@ -4,6 +4,7 @@
 }
 
 body{
+    margin: 0;
     height: 100vh;
     background: linear-gradient(90deg, blue, black);
 }
@@ -19,14 +20,32 @@ body{
     font-size: 2.5rem;
     color: white;
 }
+.footer {
+    font-size: 1rem;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    border-top: 2px solid black;
+    
+}
+.footer span {
+    color: gold;
+}
+.footer-name {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-weight: lighter;
+    font-size: 0.8rem;
 
+}
 .menu{
     display: flex;
     align-items: center;
     margin: 5px 15px 5px auto;
-    gap: 20px;
-    
-    
+    gap: 20px;    
 }
 
 .menu-item{
