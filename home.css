@@ -1,79 +1,9 @@
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient(90deg, blue, black);
-}
-
-.header{
-    display: flex;
-    
-    
-}
-
-.header-title{
-    margin: 5px;
-    font-size: 2.5rem;
-    color: white;
-}
-.footer {
-    font-size: 1rem;
-    color: white;
-    background-color:rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-weight: bold;
-    padding: 8px;
-    border-top: 2px solid black;
-    
-}
-.footer span {
-    color: gold;
-}
-.footer-name {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    font-weight: lighter;
-    font-size: 0.8rem;
-
-}
-.menu{
-    display: flex;
-    align-items: center;
-    margin: 5px 15px 5px auto;
-    gap: 20px;    
-}
-
-.menu-item{
-    display: flex;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    font-size: 1.2rem;
-    border-radius: 20px;
-    border: 2px solid white;
-    transition: background-color 0.7s ease;
-    
-}
-
-.menu-item:hover{
-background-color: rgb(251, 251, 251);
-color: navy;
-}
-
 .main{
     display: grid;
     grid-template: repeat(2, 200px) /  1fr 4fr;
     gap: 10px;
     margin: 10px;
-    margin-top: 200px;
-   
-    
+    margin-top: 200px; 
 }
 
 .github{
