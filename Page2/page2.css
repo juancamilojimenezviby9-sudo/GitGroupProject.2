@@ -51,6 +51,7 @@ h1 {
 .info-item:hover {
     transform: translateY(-10px);
     border-color: gold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .page-info summary:hover {
@@ -79,6 +80,10 @@ details::details-content {
 details[open]::details-content {
     opacity: 1;
     height: auto;
+}
+.button-container {
+    display: flex;
+    padding: 16px;
 }
 .button{
     font-size: 2rem;
