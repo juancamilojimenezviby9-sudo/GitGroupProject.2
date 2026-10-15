@@ -78,7 +78,7 @@ color: navy;
 }
 
 .github{
-    background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+    background-image: url(./images/github-cat.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 10%;
@@ -94,7 +94,7 @@ color: navy;
 }
 
 .git{
-    background-image: url(https://www.freeiconspng.com/uploads/github-logo-icon-3.png);
+    background-image: url(./images/github-logo-icon-3.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 10%;
