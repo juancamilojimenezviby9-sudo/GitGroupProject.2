@@ -154,11 +154,16 @@ color: navy;
     background-color: transparent;
     border-radius: 5px;
     border: 2px solid gold;
-    transition: background-color 0.7s ease;
+    text-shadow: 3px 3px 3px black;
+  
+    transition: 0.7s ease;
 }
 
 .button:hover{
-    background-color: gold;
+    --glow-color: rgb(245, 209, 8);
+    --enhanced-glow-color: rgb(245, 209, 8, 0.5);
+    box-shadow: 0 0 5px var(--glow-color), 0 0 25px var(--enhanced-glow-color), 0 0 50px var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
     color: white;
 }
 
