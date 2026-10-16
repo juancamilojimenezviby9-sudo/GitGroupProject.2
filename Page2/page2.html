@@ -29,14 +29,17 @@
                     <span> Create a project locally</span>
                 </summary>
                 <p class ="description">
-                    Open your terminal in VS Code and navigate to the folder where you want to create the project. 
-                    mkdir &rarr; creates a new directory. cd &rarr; moves into that directory. 
-                    Initialize Git: <span>git init</span> &rarr; This turns the folder into a local Git repository. 
-                    Create your project files, for example index.html, style.css. Check the current status: <span>git status</span>. 
-                    Stage your files and make your first commit: 
-                    <span>git add . </span>&rarr; <span>git commit -m "Initial commit"</span> &rarr; 
-                    <span>git push</span> &rarr; stages all new and modified files in the current directory. 
-                    "Initial commit" saves a snapshot of the staged changes with a message.
+                    Open the terminal in VS Code and navigate to your project folder.
+                    <br><br>
+                    Initialize Git: <span>git init</span> → Turns the folder into a local Git repository.
+                    <br><br>
+                    Create your project files, then check their status: <span>git status</span>.
+                    <br><br>
+                    Stage and commit your files:
+                    <br>
+                    <span>git add .</span> → Stages all new and modified files in the current directory.
+                    <br><br>
+                    <span>git commit -m "Initial commit"</span> → Saves a snapshot of the staged changes.
                 </p>
             </details>
             <details class = "info-item">
@@ -44,13 +47,33 @@
                     <span> Link the local repository to a remote repository</span>
                 </summary>
                 <p class ="description">
-                    First, create an empty repository on GitHub. Copy its URL, for example: https://github.com/username/my-project.git. 
-                    Then run the following commands in your local project directory: 
-                    <span>git remote add origin https://github.com/username/my-project.git</span>. 
-                    This adds the remote repository and names it origin. <span>git branch -M main</span> &rarr; 
-                    Renames your current branch to main. <span>git push -u origin main</span> &rarr; 
-                    Uploads your local commits to GitHub and sets origin/main as the upstream branch, so future pushes are easier. 
-                    Check the remote connection: <span>git remote -v</span>. This displays the remote repository URLs configured for fetching and pushing.
+                    Create an empty repository on GitHub and copy its URL, for example: https://github.com/username/my-project.git.
+                    <br><br>
+                    Connect your local repository to GitHub:
+                    <br>
+                    <span>git remote add origin https://github.com/username/my-project.git</span> → Adds the remote repository and names it origin.
+                    <br><br>
+                    <span>git branch -M main</span> → Renames the current branch to main.
+                    <br><br>
+                    <span>git push -u origin main</span> → Uploads your commits to GitHub and sets the upstream branch for future pushes.
+                    <br><br>
+                    Verify the connection: <span>git remote -v </span>→ Displays the configured remote URLs.
+                </p>
+            </details>
+             <details class = "info-item">
+                <summary>
+                    <span> Update project</span>
+                </summary>
+                <p class ="description">
+                    After making changes to your project, use these commands to save and upload your updates.
+                    <br><br>
+                    <span>git status</span> → Checks which files have changed.
+                    <br><br>
+                    <span>git add . </span>→ Stages your changes.
+                    <br><br>
+                    <span>git commit -m "Describe your changes"</span> → Saves a snapshot of the staged changes.
+                    <br><br>
+                    <span>git push</span> → Uploads your commits to GitHub.
                 </p>
             </details>
         </div>
