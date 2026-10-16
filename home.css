@@ -66,6 +66,29 @@ background-color: rgb(251, 251, 251);
 color: navy;
 }
 
+.add-name{
+    position: absolute;
+    top: 10%;
+    width: calc(100% - 100px);
+    transform: translateY(50px);
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+.add-words{
+    display: inline-block;
+    color: gold;
+}
+
+.add-words span{
+    position: absolute;
+    top: 0;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+}
+
 .main{
     height: 100%;
     display: grid;
@@ -73,8 +96,6 @@ color: navy;
     gap: 10px;
     margin: 10px;
     margin-top: 200px;
-   
-    
 }
 
 .github{
@@ -82,15 +103,27 @@ color: navy;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 10%;
+    transition: 1s;
+}
+
+.github:hover{
+    transform: scale(1.1);
 }
 
 .main-text{
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 5.5rem;
+    font-size: 5rem;
     color: white;
-    
+    text-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.main-text:hover{
+    color: gold;
+    border: 2px solid gold;
 }
 
 .git{
@@ -98,7 +131,13 @@ color: navy;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 10%;
+    transition: 1s;
 }
+
+.git:hover{
+    transform: scale(1.1);
+}
+
 
 .button-container{
     display: flex;
@@ -166,4 +205,75 @@ color: navy;
     color: white;
     
 }
+
+.add-name{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: calc(50% - 7rem);
+    transform: translateY(50px);
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.add-words{
+    display: inline-block;
+    color: gold;
+}
+
+.add-words span{
+    position: absolute;
+    top: 0;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+}
+}
+
+@keyframes animate{
+
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    2%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    18%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    20%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+.add-words span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.add-words span:nth-child(2){
+    animation-delay: 2s;
+}
+
+.add-words span:nth-child(3){
+    animation-delay: 4s;
+}
+
+.add-words span:nth-child(4){
+    animation-delay: 6s;
+}
+
+.add-words span:nth-child(5){
+    animation-delay: 8s;
 }
