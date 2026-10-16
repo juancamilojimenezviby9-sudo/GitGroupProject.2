@@ -23,7 +23,7 @@ body {
 .title {
     display: flex;
     align-items: center;
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-family:'Oswald', serif;
     -webkit-text-stroke: 3px rgb(86, 86, 248);
 }
@@ -42,8 +42,9 @@ h1 {
 .info-item {
     padding: 16px;
     font-size: 2rem;
-    border: 2px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
     margin: 24px;
     text-shadow: 20px 20px 60px black;
 }
@@ -98,4 +99,16 @@ details[open]::details-content {
 .button:hover{
     background-color: gold;
     color: white;
+}
+@media screen and (max-width: 768px){
+    .title {
+        font-size: 3rem;
+        -webkit-text-stroke: 1px rgb(86, 86, 248);
+    }
+    .info-item {
+        font-size:1.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
 }
