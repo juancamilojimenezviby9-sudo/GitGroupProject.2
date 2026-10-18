@@ -1,21 +1,28 @@
 * {
     box-sizing:border-box;
 }
+
 html {
-    height: 100vh;
+    min-height: 100%;
 }
+
 body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
-    background: linear-gradient(90deg,rgb(17, 17, 175), rgb(1, 1, 32));
+    background: linear-gradient(
+        135deg,
+        rgb(17, 17, 175),
+        rgb(1, 1, 32)
+    );
 }
+
 .main {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    margin-bottom: auto;
+    min-height: 100vh;
+    padding: 20px;
 }
+
 .title{
     color: rgb(189, 178, 178);
     font-size: 40px;
@@ -27,11 +34,14 @@ text-align: left;
 margin-left: 10%;
 font-size: 24px;
 }
+
 .branch-container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     gap: 20px;
-    
+    width: 100%;
 }
 
 .branch-box {
@@ -39,17 +49,17 @@ font-size: 24px;
     border: 2px solid cyan;
     border-radius: 12px;
     padding: 20px;
-    width: 200px;
-    transition: 0.3s;
-    text-align: center;
-
+    width: 100%;
+    max-width: 250px;
     transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
 }
-.branch-box:hover{
+
+.branch-box:hover {
     transform: translateY(-5px);
     border-color: white;
-
 }
+
 
 .branch-box summary{
 list-style: none;
